@@ -1,0 +1,16 @@
+pattern_cols: 10
+pattern_rows: 7
+center_distance_mm: 40
+
+camera_name: "mindvision"
+exposure_ms: 8
+gamma: 0.6
+vid_pid: "f622:d13a"
+
+com_port: "/dev/ttyUSB0"
+
+R_gimbal2imubody: [1, 0, 0, 0, 1, 0,  0, 0, 1]
+
+# 重投影误差: 0.0507px
+camera_matrix: [2346.6906305239563, 0, 695.78859712391454, 0, 2345.4601397327815, 549.9728426562167, 0, 0, 1]
+distort_coeffs: [-0.11666741497522516, 0.17082556762494308, -0.00085241809194815934, -0.001171724240865025, 0]

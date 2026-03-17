@@ -1,0 +1,8 @@
+[2026-03-13 21:10:59.940] [info] [heaven] successful received.
+[2026-03-13 21:10:59.940] [info] 串口初始化成功
+[2026-03-13 21:10:59.940] [info] [heaven] read_thread started.
+[2026-03-13 21:11:00.736] [info] Mindvision opened.
+[2026-03-13 21:11:00.737] [info] 相机初始化成功
+[2026-03-13 21:11:15.853] [info] Mindvision destructed.
+[2026-03-13 21:11:15.866] [info] [heaven] read_thread stopped.
+[2026-03-13 21:11:15.867] [debug] Recorder received empty img. Skip this frame.

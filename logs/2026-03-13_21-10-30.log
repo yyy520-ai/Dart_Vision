@@ -1,0 +1,1 @@
+[2026-03-13 21:10:30.706] [error] [hseven] Failed to open serial: IO Exception (13): Permission denied, file /home/w/sp_vision_25/io/serial/src/impl/unix.cc, line 151.

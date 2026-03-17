@@ -1,0 +1,6 @@
+[2026-03-12 00:01:38.517] [info] [heaven] successful received.
+[2026-03-12 00:01:38.518] [info] [heaven] read_thread started.
+[2026-03-12 00:01:39.207] [info] Mindvision opened.
+[2026-03-12 00:01:44.715] [info] Mindvision destructed.
+[2026-03-12 00:01:44.718] [info] [heaven] read_thread stopped.
+[2026-03-12 00:01:44.718] [debug] Recorder received empty img. Skip this frame.

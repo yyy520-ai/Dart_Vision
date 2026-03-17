@@ -1,0 +1,7 @@
+[2026-03-13 21:30:44.396] [info] 串口初始化成功
+[2026-03-13 21:30:44.396] [info] [heaven] read_thread started.
+[2026-03-13 21:30:45.076] [info] Mindvision opened.
+[2026-03-13 21:30:45.076] [info] 相机初始化成功
+[2026-03-13 21:30:45.320] [debug] 显示图像大小: 640x512
+[2026-03-13 21:31:09.210] [info] Mindvision destructed.
+[2026-03-13 21:31:09.225] [info] [heaven] read_thread stopped.

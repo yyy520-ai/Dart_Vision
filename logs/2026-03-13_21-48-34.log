@@ -1,0 +1,6 @@
+[2026-03-13 21:48:34.271] [info] [heaven] read_thread started.
+[2026-03-13 21:48:34.780] [info] Mindvision opened.
+[2026-03-13 21:48:34.780] [info] 相机初始化成功
+[2026-03-13 21:48:35.131] [debug] 显示图像大小: 640x512
+[2026-03-13 21:49:05.702] [info] Mindvision destructed.
+[2026-03-13 21:49:05.709] [info] [heaven] read_thread stopped.
