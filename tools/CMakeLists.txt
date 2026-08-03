@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.16)
+
+add_library(tools OBJECT 
+    exiter.cpp
+    img_tools.cpp
+    math_tools.cpp
+    plotter.cpp
+    trajectory.cpp
+    recorder.cpp
+    logger.cpp
+    dart_recorder.cpp
+    crc.cpp
+)
