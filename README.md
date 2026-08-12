@@ -43,9 +43,9 @@ make -j8
 
 
 
-## 🏗️ 系统架构
+## 🏗️ System Architecture
 
-### 数据流总览
+### Dataflow Overview
 
 ```
 ┌─────────────┐      ┌────────────────┐      ┌──────────────────┐
@@ -62,14 +62,14 @@ make -j8
         └──── 电控回传 offset（云台当前偏移角）──┘
 ```
 
-主程序在 `src/dart.cpp`（生产版）中每帧执行：
+The main loop executes the following steps per frame (located in src/dart.cpp for production):
 
-1. 从阻塞队列取最新一帧图像（队列容量为 1，旧帧自动丢弃，保证低延迟）
-2. 检测画面中的绿色发光板，得到 `LightSpot`（圆心、半径、轮廓）
-3. 利用 PnP 解算发光板在相机坐标系下的位置，计算偏航角 yaw
-4. 将 yaw 指令经串口发送给电控，驱动云台转向飞镖靶
+1.Fetch the latest image frame from a blocking queue (Queue capacity = 1; older frames are dropped automatically to ensure low latency).
+2.Detect the green light board in the image frame to extract LightSpot features (center, radius, contours).
+3.Estimate the target's position in the camera coordinate system using PnP and compute the relative yaw angle.
+4.Send yaw control commands to the Electronic Control Unit (ECU) via serial interface to actuate the gimbal towards the dart target.
 
-### 目录结构
+### Directory Structure
 
 ```
 Dart_Vision/
@@ -102,9 +102,9 @@ Dart_Vision/
 
 ---
 
-## 🎯 核心算法
+## 🎯 Core Algorithms
 
-### 灯点检测
+### Light Spot Detection
 
 检测流程针对飞镖靶**绿色指示灯**定制，简单高效：
 
@@ -117,7 +117,7 @@ Dart_Vision/
 
 
 
-### 依赖
+### Dependencies
 
 - CMake ≥ 3.16.3，C++17
 - OpenCV（core / imgproc / highgui / imgcodecs / calib3d / videoio）
@@ -125,7 +125,7 @@ Dart_Vision/
 - 迈威 MVSDK / 海康 MvCameraControl SDK（按使用的相机选择性安装）
 - libusb-1.0
 
-## 🎥 标定流程
+## 🎥 Calibration Procedure
 
 要获得准确的瞄准精度，相机标定是必不可少的一步：
 
