@@ -134,7 +134,7 @@ Dart_Vision/
 3. **手眼标定** — 运行 `calibrate_handeye`（或 `calibrate_robotworld_handeye`），求出相机与云台之间的外参 `R_camera2gimbal` / `t_camera2gimbal`
 4. **回填配置** — 将标定结果写入 `configs/dart.yaml`
 
-## 比赛的效果视频
+## Demonstration
 
 ![alt text](20260803154925-ezgif.com-video-to-gif-converter.gif)
 
